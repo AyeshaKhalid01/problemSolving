@@ -19,3 +19,12 @@ def palindrome(input):
     if input[0]==input[-1]:
         return palindrome(input[1:-1])
     return False
+
+
+print(dectobin(233))
+print(sumNN(10))
+print(reverseString("palindrome"))
+print(palindrome("kayak"))
+print(palindrome("racecar"))
+print(palindrome("Ayesha"))
+
