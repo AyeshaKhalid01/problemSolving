@@ -20,6 +20,17 @@ def palindrome(input):
         return palindrome(input[1:-1])
     return False
 
+def binSearchHelper(input, target, left, right):
+    pos = (left+right)//2
+    if left>right:
+        return -1
+    elif input[pos]==target:
+        return pos
+    elif input[pos]>target:
+        return binSearchHelper(input, target, left, pos-1)
+    else:
+        return binSearchHelper(input, target, pos+1, right)
+
 
 print(dectobin(233))
 print(sumNN(10))
