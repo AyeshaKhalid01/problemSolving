@@ -62,3 +62,15 @@ class LinkedList:
             prev = curr
             curr = tempNext
         return curr
+
+n1=Node(1)
+n2=Node(2)
+n3=Node(3)
+n1.next = n2
+n2.next = n3
+x=LinkedList(n1)
+x.linkedListReversal(n1)
+print(n2.next.data)
+print(x.head.data)
+print(x.reverseLoop(n3).data)
+
