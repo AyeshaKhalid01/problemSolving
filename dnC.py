@@ -29,3 +29,36 @@ def merge(input, start, mid, end):
     for i in range(start,end+1):
         input[i]= temp[i-start]
 
+
+x=[2,3,5,1,9,7, 10]
+mergeSort(x, 0, len(x)-1)
+print(x)
+
+class Node:
+    def __init__(self, data):
+        self.data=data
+        self.next=None
+
+class LinkedList:
+    def __init__(self,head):
+        self.head = head
+
+    def linkedListReversal(self, head):
+        if (head == None or head.next == None):
+            return head
+        newHead = self.linkedListReversal(head.next)
+        head.next.next=head
+        head.next=None
+        self.head=newHead
+        return self.head
+
+    def reverseLoop(self,head):
+        prev = None
+        curr = head
+        print(curr.data)
+        while (curr != None and curr.next != None):
+            tempNext = curr.next
+            curr.next = prev
+            prev = curr
+            curr = tempNext
+        return curr
