@@ -9,3 +9,10 @@ A set of rules, also known as recurrence relation that reduces all other cases t
 
 
 Go over DP and sliding window problems
+
+
+### May 27th
+Look for project
+Finished recursive video
+Leetcode questions:
+
