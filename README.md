@@ -20,3 +20,7 @@ Leetcode questions:
 NeetCode: Arrays lessons from DS&A
 Leetcode questions: Remove Duplicates From Sorted Array, Remove Element, Concatenation of Array, Baseball Game, Valid Parentheses, Min Stack
 
+### June 1
+NeetCode: Linked list lessons from DS&A
+Leetcode questions: Merge Two Sorted Lists
+
